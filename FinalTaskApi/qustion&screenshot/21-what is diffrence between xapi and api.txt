@@ -1,0 +1,1 @@
+API stands for Application Programming Interface. It is a generic software term for the connection between different technical systems. Two software systems can share data with each other using APIs. The xAPI refers specifically to how learning activities should be reported between different technical systems.

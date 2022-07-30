@@ -1,0 +1,31 @@
+SOAPUI                                                                          POSTMAN
+
+
+It is used by API protocols like soap, REST, GraphQL.                         It is used by the testing only the REST API.
+
+
+
+It is an API tool that provides data-driven testing.                          It’s a google chrome extension that does not have data-driven testing features.
+
+
+It supports the customization of reports in various formats.                  However, It supports only JSON and HTML formats.
+
+
+Mainly used for API automation testing.                                       Used for REST API’s physical and analytic testing.
+
+SoapUI automated tests can be executed through the                            Strictly Does not support a command-line interface. 
+command-line interface.    
+
+
+Scripts can be reused very easily. It consists of                             REST calls are saved for further use and accept swagger and RAML API formats.
+ asynchronous testing.   
+
+
+
+Supports SOAP API testing.	                                               Does not support SOAP API testing.
+
+ 
+A scripting language is Groovy.                                         	A scripting language is JavaScript.   
+
+
+SoapUI requests are easily accessible.                                  	Limited features are its drawback.

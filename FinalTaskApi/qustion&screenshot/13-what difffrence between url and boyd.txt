@@ -1,0 +1,4 @@
+ in postman
+The Body tab in Postman allows you to specify the data you need to send with a request. You can send various different types of body data to suit your API. If you're sending body data, make sure you have the correct headers selected to indicate the content type your API may need to process the received data correctly.
+
+The essential ingredient of any Postman API request is the Uniform Resource Locator (URL). The URL provides all the details that your browser, servers, and developers need to find the API resource they're requesting.
