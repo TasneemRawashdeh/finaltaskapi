@@ -38,9 +38,9 @@ namespace learn.infra.Repoisitory
             var parameter = new DynamicParameters();
 
             parameter.Add
-                ("chackinn", filter.DateMassage, dbType: DbType.DateTime, direction: ParameterDirection.Input);
+                ("chackinn", filter.chackinn, dbType: DbType.DateTime, direction: ParameterDirection.Input);
             parameter.Add
-                ("chackoutt", filter.DateMassage, dbType: DbType.DateTime, direction: ParameterDirection.Input);
+                ("chackoutt", filter.chackinn, dbType: DbType.DateTime, direction: ParameterDirection.Input);
             IEnumerable<massage_task> result = dBContext.dbConnection.Query<massage_task>
                            ("massage_task_Package.SearchButweenDate", parameter, commandType: CommandType.StoredProcedure);
             return result.ToList();

@@ -33,5 +33,10 @@ namespace learn.infra.Service
         {
             return user_taskrepo.visaeachuser();
         }
+
+        public bool Insertuser(user_task i)
+        {
+            return user_taskrepo.Insertuser(i);
+        }
     }
 }

@@ -12,7 +12,8 @@ namespace learn.core.Repoisitory
         public List<user_task> GetAlluser();
         public List<usermassagecountdto> totaleachuser();
         public List<CCU> CountCantryUser();
-       
+        public bool Insertuser(user_task i);
+
         public List<countuservisacs> visaeachuser();
 
     }

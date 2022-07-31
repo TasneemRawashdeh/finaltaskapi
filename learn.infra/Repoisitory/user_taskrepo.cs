@@ -6,6 +6,7 @@ using learn.core.Repoisitory;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -43,6 +44,38 @@ namespace learn.infra.Repoisitory
                 ("user_task_Package.visaeachuser", commandType: CommandType.StoredProcedure);
             return result.ToList();
 
+        }
+        public bool Insertuser(user_task i)
+        {
+            Random random = new Random();
+            StreamReader Filen = new StreamReader(@"C:\Users\HACKJO\Downloads\emp.txt");
+            string[] email = { "@gmail.com", "@yahoo.com" };
+
+            string line;
+            do
+            {
+                line = Filen.ReadLine();
+                string[] lines = line.Split(' ');
+                int indexemail = random.Next(email.Length);
+
+                // Console.WriteLine();
+                var parameter = new DynamicParameters();
+
+                parameter.Add("fullname", lines[0]+ lines[1], dbType: DbType.String, direction: ParameterDirection.Input);
+                parameter.Add("emailuser", lines[0].ToLower() + lines[1].ToLower() + email[indexemail], dbType: DbType.String, direction: ParameterDirection.Input);
+
+
+
+
+                var result = dBContext.dbConnection.ExecuteAsync("user_task_Package.Insertuser", parameter, commandType: CommandType.StoredProcedure);
+
+            } while (!Filen.EndOfStream);
+            Filen.Close();
+
+
+
+
+            return true;
         }
     }
 }

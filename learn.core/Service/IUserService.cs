@@ -12,6 +12,8 @@ namespace learn.core.Service
         public List<usermassagecountdto> totaleachuser();
         public List<CCU> CountCantryUser();
         public List<countuservisacs> visaeachuser();
+        public bool Insertuser(user_task i);
+
 
 
 

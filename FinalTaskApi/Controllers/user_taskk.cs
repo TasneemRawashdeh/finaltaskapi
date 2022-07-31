@@ -108,5 +108,11 @@ namespace FinalTaskApi.Controllers
                 return jsonstring;
             }
         }
+
+        [HttpPost]
+        public bool Insertuser([FromBody] user_task i)
+        {
+            return UserService.Insertuser(i);
+        }
     }
 }
