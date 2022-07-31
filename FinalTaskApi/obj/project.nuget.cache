@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7YhTakoucFBGIy4QWo7tjIvJxDuUwufN7XBBwij4LLejXZQOB3HcUpm0bUIAfBWwdNgbu+d1YhRcQrCtBExe/Q==",
+  "dgSpecHash": "M0GQb9t4KcPhfNFkUVen2KNEdDZZOuQ4psVCwHSrGhy8coM14kdhInXGhS5nDlJrxYkfhY9y6ri7I5HepsML/w==",
   "success": true,
   "projectFilePath": "C:\\Users\\HACK-JO\\source\\repos\\FinalTaskApi\\FinalTaskApi\\FinalTaskApi.csproj",
   "expectedPackageFiles": [
@@ -38,7 +38,7 @@
     "C:\\Users\\HACK-JO\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\HACK-JO\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\HACK-JO\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
-    "C:\\Users\\HACK-JO\\.nuget\\packages\\mimekit\\3.2.0\\mimekit.3.2.0.nupkg.sha512",
+    "C:\\Users\\HACK-JO\\.nuget\\packages\\mimekit\\3.3.0\\mimekit.3.3.0.nupkg.sha512",
     "C:\\Users\\HACK-JO\\.nuget\\packages\\nancy\\0.11.0\\nancy.0.11.0.nupkg.sha512",
     "C:\\Users\\HACK-JO\\.nuget\\packages\\netcore.mailkit\\2.1.0\\netcore.mailkit.2.1.0.nupkg.sha512",
     "C:\\Users\\HACK-JO\\.nuget\\packages\\oracle.manageddataaccess.core\\3.21.61\\oracle.manageddataaccess.core.3.21.61.nupkg.sha512",

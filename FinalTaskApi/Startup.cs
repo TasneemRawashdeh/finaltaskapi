@@ -54,6 +54,10 @@ namespace FinalTaskApi
 
             services.AddScoped<IcardService, cardService>();
             services.AddScoped<Icard, cardrepo>();
+         
+            services.AddScoped<Igroupblock_Service, blockuser_Service> ();
+         
+            services.AddScoped<Igroupblock, groupblock> ();
 
             services.AddScoped<IMassageService, massageService> ();
             services.AddScoped<IAuthentication, Authentication>();

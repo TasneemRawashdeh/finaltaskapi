@@ -475,7 +475,7 @@
           }
         }
       },
-      "MimeKit/3.2.0": {
+      "MimeKit/3.3.0": {
         "type": "package",
         "dependencies": {
           "Portable.BouncyCastle": "1.9.0",
@@ -1071,7 +1071,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.27"
+          "MailKit": "3.2.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.27",
+          "MimeKit": "3.3.0",
+          "NETCore.MailKit": "2.1.0"
         },
         "compile": {
           "bin/placeholder/learn.core.dll": {}
@@ -1085,10 +1088,12 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Dapper": "2.0.123",
+          "MailKit": "3.2.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.27",
           "Microsoft.Data.SqlClient": "4.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "MimeKit": "3.3.0",
           "Oracle.ManagedDataAccess.Core": "3.21.61",
           "learn.core": "1.0.0"
         },
@@ -1898,20 +1903,17 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "MimeKit/3.2.0": {
-      "sha512": "l9YHMBhBUwY7qQHUp8fw0EvjcbmhN4Iggz6MdjqIShBf42+0nJTa5gu0kuupCOPuiARc9ZaS9c9f0gKz4OnxKw==",
+    "MimeKit/3.3.0": {
+      "sha512": "l3J4XEioKPfck1WnCSVPPH3Jc3BefaAd2ntU66zn6pHDM2F5ev4KSUCwg3VnEKBCe8up2T8+qhliKPxug9fRZw==",
       "type": "package",
-      "path": "mimekit/3.2.0",
+      "path": "mimekit/3.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icons/mimekit-50.png",
-        "lib/net452/MimeKit.dll",
-        "lib/net452/MimeKit.pdb",
-        "lib/net452/MimeKit.xml",
-        "lib/net461/MimeKit.dll",
-        "lib/net461/MimeKit.pdb",
-        "lib/net461/MimeKit.xml",
+        "lib/net462/MimeKit.dll",
+        "lib/net462/MimeKit.pdb",
+        "lib/net462/MimeKit.xml",
         "lib/net47/MimeKit.dll",
         "lib/net47/MimeKit.pdb",
         "lib/net47/MimeKit.xml",
@@ -1930,7 +1932,7 @@
         "lib/netstandard2.1/MimeKit.dll",
         "lib/netstandard2.1/MimeKit.pdb",
         "lib/netstandard2.1/MimeKit.xml",
-        "mimekit.3.2.0.nupkg.sha512",
+        "mimekit.3.3.0.nupkg.sha512",
         "mimekit.nuspec"
       ]
     },
@@ -3626,7 +3628,9 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "MailKit >= 3.2.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.27",
+      "MimeKit >= 3.3.0",
       "NETCore.MailKit >= 2.1.0",
       "Nancy >= 0.11.0",
       "learn.core >= 1.0.0",
@@ -3679,9 +3683,17 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "MailKit": {
+            "target": "Package",
+            "version": "[3.2.0, )"
+          },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[3.1.27, )"
+          },
+          "MimeKit": {
+            "target": "Package",
+            "version": "[3.3.0, )"
           },
           "NETCore.MailKit": {
             "target": "Package",

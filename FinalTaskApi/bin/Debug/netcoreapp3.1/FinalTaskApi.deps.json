@@ -31,7 +31,9 @@
     ".NETCoreApp,Version=v3.1": {
       "FinalTaskApi/1.0.0": {
         "dependencies": {
+          "MailKit": "3.2.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.27",
+          "MimeKit": "3.3.0",
           "NETCore.MailKit": "2.1.0",
           "Nancy": "0.11.0",
           "learn.core": "1.0.0",
@@ -360,7 +362,7 @@
       },
       "MailKit/3.2.0": {
         "dependencies": {
-          "MimeKit": "3.2.0"
+          "MimeKit": "3.3.0"
         },
         "runtime": {
           "lib/netstandard2.1/MailKit.dll": {
@@ -799,7 +801,7 @@
           "lib/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll": {}
         }
       },
-      "MimeKit/3.2.0": {
+      "MimeKit/3.3.0": {
         "dependencies": {
           "Portable.BouncyCastle": "1.9.0",
           "System.Buffers": "4.5.1",
@@ -809,8 +811,8 @@
         },
         "runtime": {
           "lib/netstandard2.1/MimeKit.dll": {
-            "assemblyVersion": "3.2.0.0",
-            "fileVersion": "3.2.0.0"
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.3.0.0"
           }
         },
         "compile": {
@@ -1364,7 +1366,10 @@
       },
       "learn.core/1.0.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.27"
+          "MailKit": "3.2.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.27",
+          "MimeKit": "3.3.0",
+          "NETCore.MailKit": "2.1.0"
         },
         "runtime": {
           "learn.core.dll": {}
@@ -1376,10 +1381,12 @@
       "learn.infra/1.0.0": {
         "dependencies": {
           "Dapper": "2.0.123",
+          "MailKit": "3.2.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.27",
           "Microsoft.Data.SqlClient": "4.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "MimeKit": "3.3.0",
           "Oracle.ManagedDataAccess.Core": "3.21.61",
           "learn.core": "1.0.0"
         },
@@ -3196,12 +3203,12 @@
       "path": "microsoft.win32.systemevents/6.0.0",
       "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
     },
-    "MimeKit/3.2.0": {
+    "MimeKit/3.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-l9YHMBhBUwY7qQHUp8fw0EvjcbmhN4Iggz6MdjqIShBf42+0nJTa5gu0kuupCOPuiARc9ZaS9c9f0gKz4OnxKw==",
-      "path": "mimekit/3.2.0",
-      "hashPath": "mimekit.3.2.0.nupkg.sha512"
+      "sha512": "sha512-l3J4XEioKPfck1WnCSVPPH3Jc3BefaAd2ntU66zn6pHDM2F5ev4KSUCwg3VnEKBCe8up2T8+qhliKPxug9fRZw==",
+      "path": "mimekit/3.3.0",
+      "hashPath": "mimekit.3.3.0.nupkg.sha512"
     },
     "Nancy/0.11.0": {
       "type": "package",
